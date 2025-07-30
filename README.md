@@ -1,12 +1,31 @@
-# React + Vite
+# 🗓️ Upcoming Reservations - React Assessment Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive React project that displays a user's upcoming reservations in a card-based UI using Tailwind CSS. It was created as part of an assessment task.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [View Live on Vercel](https://upcoming-reservations-assessment.vercel.app/)
 
-## Expanding the ESLint configuration
+## 📁 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├── components/ # Reusable React components
+│ ├── Card.jsx # Card component for each reservation
+│ ├── Header.jsx # Page header component
+│ └── UpcomingReservations.jsx # Main display component
+├── utils/
+│ └── data.jsx # Static reservation data
+├── App.jsx # Root component
+├── main.jsx # Entry point
+└── index.css # Tailwind CSS and global styles
+
+
+## Getting Started
+
+### Clone the Repo
+```bash
+git clone https://github.com/itsSandeep2023/upcoming-reservations-assessment.git
+cd upcoming-reservations-assessment
+
+npm install
+npm run dev
