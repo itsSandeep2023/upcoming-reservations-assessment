@@ -1,5 +1,9 @@
 const Card = ({ data }) => {
   const color = data.status === "Confirmed" ? "#16a34a" : "#facc15";
+
+  const handleOnCancel = (id) => {
+    console.log("Cancel reservation:", id);
+  };
   return (
     <div className="card xl:flex-row">
       <div className="card-left">
@@ -16,7 +20,10 @@ const Card = ({ data }) => {
         <div className="font-semibold" style={{ color: color }}>
           {data.status}
         </div>
-        <button className="py-2 px-5 rounded-xl bg-red-500 cursor-pointer">
+        <button
+          onClick={() => handleOnCancel(data.id)}
+          className="py-2 px-5 rounded-xl bg-red-500 cursor-pointer"
+        >
           Cancel
         </button>
       </div>
