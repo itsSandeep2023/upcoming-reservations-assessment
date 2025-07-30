@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "poppins";
+}
+
+@theme {
+  /* For mobile 375px */
+  --breakpoint-xs: 376px;
+  /* For tablet 1200px */
+  --breakpoint-xl: 1201px;
+
+  --color-light: #f8f8f8;
+}
+
+@layer base {
+  h2 {
+    @apply text-nowrap;
+  }
+}
+
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .app {
+    @apply w-full p-10 bg-light;
+  }
+
+  .header {
+    @apply w-full text-4xl font-semibold;
+  }
+
+  .reservations {
+    @apply w-full mt-10 flex flex-col gap-5;
+  }
+
+  .card {
+    @apply w-full flex flex-col py-4 px-8 border rounded-xl;
+  }
+
+  .card-left {
+    @apply w-full flex flex-col gap-3;
+  }
+
+  .card-details {
+    @apply flex flex-col flex-wrap gap-5 text-xl;
+  }
+
+  .card-right {
+    @apply w-full pt-5 flex flex-col gap-5 justify-between items-center text-2xl;
+  }
+}
